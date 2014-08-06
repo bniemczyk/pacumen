@@ -1,0 +1,13 @@
+\BOOKMARK [1][-]{section.1}{Living Document}{}% 1
+\BOOKMARK [1][-]{section.2}{Introduction}{}% 2
+\BOOKMARK [1][-]{section.3}{Related Work/Prior Research}{}% 3
+\BOOKMARK [1][-]{section.4}{A quick introduction to Machine Learning}{}% 4
+\BOOKMARK [2][-]{subsection.4.1}{Issues while designing machine learning systems}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.2}{Performance Issues}{section.4}% 6
+\BOOKMARK [1][-]{section.5}{Our Approach}{}% 7
+\BOOKMARK [2][-]{subsection.5.1}{Algorithms used to classify 10 second windows of traffic}{section.5}% 8
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Decision Tree Algorithm}{subsection.5.1}% 9
+\BOOKMARK [2][-]{subsection.5.2}{Using Bayes Rule to update our confidence}{section.5}% 10
+\BOOKMARK [1][-]{section.6}{Experiments and Results}{}% 11
+\BOOKMARK [1][-]{section.7}{Discussion}{}% 12
+\BOOKMARK [1][-]{section*.7}{References}{}% 13

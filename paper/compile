@@ -1,0 +1,4 @@
+pdflatex pacumen.tex
+bibtex pacumen
+pdflatex pacumen.tex
+pdflatex pacumen.tex

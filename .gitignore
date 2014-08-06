@@ -1,0 +1,10 @@
+*.egg-info
+*.pyc
+log
+*.log
+*.swp
+build
+dist
+.ipynb_checkpoints
+Thumbs.db
+~*

@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: pacumen.aux
+The style file: plain.bst
+Database file #1: tunnelDetect.bib
+Warning--can't use both volume and number fields in karagiannis2005blinc
+Warning--can't use both volume and number fields in moore2005internet
+You've used 13 entries,
+            2118 wiz_defined-function locations,
+            575 strings with 6694 characters,
+and the built_in function-call counts, 5653 in all, are:
+= -- 584
+> -- 253
+< -- 10
++ -- 102
+- -- 86
+* -- 391
+:= -- 867
+add.period$ -- 46
+call.type$ -- 13
+change.case$ -- 82
+chr.to.int$ -- 0
+cite$ -- 15
+duplicate$ -- 228
+empty$ -- 440
+format.name$ -- 86
+if$ -- 1244
+int.to.chr$ -- 0
+int.to.str$ -- 13
+missing$ -- 12
+newline$ -- 67
+num.names$ -- 26
+pop$ -- 99
+preamble$ -- 1
+purify$ -- 69
+quote$ -- 0
+skip$ -- 171
+stack$ -- 0
+substring$ -- 371
+swap$ -- 88
+text.length$ -- 10
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 52
+warning$ -- 2
+while$ -- 58
+width$ -- 15
+write$ -- 152
+(There were 2 warnings)

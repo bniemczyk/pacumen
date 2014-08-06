@@ -1,0 +1,22 @@
+\section{Experiments and Results}
+We collected the data using the {\tt --nflog} option in iptables, for outbound packets only. 
+We extracted the features using the python wrapper to libcap --{\tt scapy} in linux and {\tt winpcapy} in windows.  
+
+The pacumen tool can be run directly within a {\tt iPython} notebook and setting a variable to point to the directory with the pcap files. 
+In order to run algorithms in Weka\cite{hall2009weka} we provide a converter. 
+\section{Discussion}
+
+%Metrics that we use to evaluate our techniques:
+
+%$accuracy = \frac{Number\ of\ Correctly\ classified\ instances}{Total\ number\ of\ instances}$
+We resort to standard measures of precision, recall and f-measure to
+demonstrate the efficacy of our approach.
+
+\[precision = \frac{Number\ of\ Correctly\ classified\ instances}{Total\ number\ of\  positive\ classifications}\]
+
+
+\[recall = \frac{Number\ of\ Correctly\ classified\ instances}{Total\ number\ of\ class\ members}\]
+
+\[f-measure = 2 . \frac{precision.recall}{precision + recall}\]
+
+

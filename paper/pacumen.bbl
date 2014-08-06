@@ -1,0 +1,83 @@
+\begin{thebibliography}{10}
+
+\bibitem{alshammari2009machine}
+Riyad Alshammari and A~Nur Zincir-Heywood.
+\newblock Machine learning based encrypted traffic classification: identifying
+  ssh and skype.
+\newblock In {\em Computational Intelligence for Security and Defense
+  Applications, 2009. CISDA 2009. IEEE Symposium on}, pages 1--8. IEEE, 2009.
+
+\bibitem{bernaille2006traffic}
+Laurent Bernaille, Renata Teixeira, Ismael Akodkenou, Augustin Soule, and Kave
+  Salamatian.
+\newblock Traffic classification on the fly.
+\newblock {\em ACM SIGCOMM Computer Communication Review}, 36(2):23--26, 2006.
+
+\bibitem{branch2009rapid}
+Philip~A Branch, Amiel Heyde, and Grenville~J Armitage.
+\newblock Rapid identification of skype traffic flows.
+\newblock In {\em Proceedings of the 18th international workshop on Network and
+  operating systems support for digital audio and video}, pages 91--96. ACM,
+  2009.
+
+\bibitem{hall2009weka}
+Mark Hall, Eibe Frank, Geoffrey Holmes, Bernhard Pfahringer, Peter Reutemann,
+  and Ian~H Witten.
+\newblock The weka data mining software: an update.
+\newblock {\em ACM SIGKDD explorations newsletter}, 11(1):10--18, 2009.
+
+\bibitem{karagiannis2005blinc}
+Thomas Karagiannis, Konstantina Papagiannaki, and Michalis Faloutsos.
+\newblock Blinc: multilevel traffic classification in the dark.
+\newblock In {\em ACM SIGCOMM Computer Communication Review}, volume~35, pages
+  229--240. ACM, 2005.
+
+\bibitem{lim2000comparison}
+Tjen-Sien Lim, Wei-Yin Loh, and Yu-Shan Shih.
+\newblock A comparison of prediction accuracy, complexity, and training time of
+  thirty-three old and new classification algorithms.
+\newblock {\em Machine learning}, 40(3):203--228, 2000.
+
+\bibitem{mcgregor2004flow}
+Anthony McGregor, Mark Hall, Perry Lorier, and James Brunskill.
+\newblock Flow clustering using machine learning techniques.
+\newblock In {\em Passive and Active Network Measurement}, pages 205--214.
+  Springer, 2004.
+
+\bibitem{mitchell1997machine}
+Tom~M Mitchell.
+\newblock Machine learning. wcb, 1997.
+
+\bibitem{moore2005internet}
+Andrew~W Moore and Denis Zuev.
+\newblock Internet traffic classification using bayesian analysis techniques.
+\newblock In {\em ACM SIGMETRICS Performance Evaluation Review}, volume~33,
+  pages 50--60. ACM, 2005.
+
+\bibitem{roughan2004class}
+Matthew Roughan, Subhabrata Sen, Oliver Spatscheck, and Nick Duffield.
+\newblock Class-of-service mapping for qos: a statistical signature-based
+  approach to ip traffic classification.
+\newblock In {\em Proceedings of the 4th ACM SIGCOMM conference on Internet
+  measurement}, pages 135--148. ACM, 2004.
+
+\bibitem{williams2006preliminary}
+Nigel Williams, Sebastian Zander, and Grenville Armitage.
+\newblock A preliminary performance comparison of five machine learning
+  algorithms for practical ip traffic flow classification.
+\newblock {\em ACM SIGCOMM Computer Communication Review}, 36(5):5--16, 2006.
+
+\bibitem{zander2005automated}
+Sebastian Zander, Thuy Nguyen, and Grenville Armitage.
+\newblock Automated traffic classification and application identification using
+  machine learning.
+\newblock In {\em Local Computer Networks, 2005. 30th Anniversary. The IEEE
+  Conference on}, pages 250--257. IEEE, 2005.
+
+\bibitem{zhang2013robust}
+Jun Zhang, Chao Chen, Yang Xiang, and Wanlei Zhou.
+\newblock Robust network traffic identification with unknown applications.
+\newblock In {\em Proceedings of the 8th ACM SIGSAC symposium on Information,
+  computer and communications security}, pages 405--414. ACM, 2013.
+
+\end{thebibliography}

@@ -1,0 +1,137 @@
+\section{Related Work/Prior Research}
+Due to the fundamental nature of the \emph{identification problem}
+there has been much work over a long period of time
+that has explored the identification of applications/traffic
+types over encrypted channels or at least in a payload agnostic manner. 
+Table~\ref{tab1} illustrates a selection of this work. 
+
+We cite two attempts at comparing various machine learning algorithms
+in conjunction with several features to solve the \emph{identification 
+problem}. 
+Lim \emph{et al} \cite{lim2000comparison} compare twenty-two decision
+tree, nine statistical, and two neural network algorithms on
+thirty-two datasets with respect to classification accuracy, training
+time, and (in the case of trees) number of leaf nodes.  They measure
+classification accuracy by mean error rate and mean rank of error
+rate.  They state that most of these algorithms perform similarly with
+a statistical, spline-based, algorithm called Polyclass working
+slightly better than other algorithms.  Another statistical algorithm,
+logistic regression, is second with respect to the two accuracy
+criteria.  They find that the most accurate decision tree algorithm is
+Quest with linear splits, which ranks fourth and fifth, respectively.
+Although spline-based statistical algorithms tend to have good
+accuracy, they also require relatively long training times. Polyclass,
+for example, is third last in terms of median training time. It often
+requires hours of training compared to seconds for other
+algorithms. The Quest and logistic regression algorithms are
+substantially faster. Among decision tree algorithms with univariate
+splits, C4.5, Ind-Cart, and Quest have the best combinations of error
+rate and speed. But C4.5 tends to produce trees with comparitively a
+large number of leaves.
+Alshamarri \emph{et al} \cite{alshammari2009machine} compare AdaBoost,
+Support Vector Machines, Naive Bayesian, RIPPER and C4.5.  They find
+that C4.5 is the best of these.
+
+
+
+Some techniques such as the one by Bernaille \emph{et
+  al}\cite{bernaille2006traffic} require very few features to be
+collected -- only the first five packets are used. The number five was
+arrived by trying different number of packets, and different numbers of 
+clusters and finding the pair $\langle 5,50 \rangle$ to yield the best
+results.
+
+
+ Karagiannis
+\emph{et al} \cite{karagiannis2005blinc} enhance their classification
+mechanism with some social, functional and application level
+information, and obtain good accuracy.  
+
+Roughan \emph{et al}
+\cite{roughan2004class} perform classification for the purpose of
+quality of service(QOS) maintenance.
+
+
+\begin{table}[htbp]
+\begin{small}
+\begin{tabular}{||p{30mm}|p{35mm}|p{25mm}|p{25 mm}||}
+\hline
+Authors & ML Technique & Data, Quantity, Features & Accuracy \\
+\hline
+\hline
+Williams et al \cite{williams2006preliminary}  & 
+(i) Baysesian with discretized featured (ii) C4.5 (iii) Naive Bayes (iv) Naive Bayes Tree.   Feature reduction using correlation and consistency. 
+Filter vs. wrapper models.  Sampling to limit number of flows. 
+
+ &auckland-vi-2001061{1,2}  leipzig-ii-20030221, nzix-ii20000706 4000 Flows per application class ; 22 Features & $> 80 \%$ \\
+\hline
+%------------------------------------------------------------------
+McGregor \emph{et al} \cite{mcgregor2004flow} &  Expectation Maximization(EM)   & packet length, inter-arrival time and flow duration. & NA, unsupervised\\
+%--------------------------------------------------------------------------------------
+%\hline
+%\cite{dunnigan2000flow} & PCA to detect consistent statistical patterns & &  \\
+%-----------------------------------------------------
+\hline
+Zander \emph{et al}\cite{zander2005automated} &  Greedy Forward Feature Search and EM   & subset of Table~\ref{flfeatures} &  average of $86.5\%$\\
+%-----------------------------------------------------
+\hline
+Roughan \emph{et al} \cite{roughan2004class} &  Nearest Neighbor (NN) and linear discriminate analysis (LDA) into interactive or  transactional& packet, flow, connection, intra-flow, multi-flow & 90s \\
+%-----------------------------------------------------
+\hline
+Moore \emph{et al} \cite{moore2005internet}  & Naive Bayes Classifier, Correlation based  selection of stronger features  &  248 flow features -- packet length, inter-arrival times & $> 65 \%$ per flow. $70 - 97 \%$ with Kernel density estimation and  and $> 90\%$ with FCBF Filtering  \\
+%---------------------------------
+\hline
+Karagiannis {\em et al} \cite{karagiannis2005blinc}&graph-based& social, functional, application& $> 95 \%$\\
+\hline
+Bernaille {\em et al} \cite{bernaille2006traffic}&  K-means clusterting & First 5 packets&$> 80 \%$  \\
+\hline
+Lim \emph{et al}\cite{lim2000comparison} &  33 algorithms &  32 data sets &\\
+\hline
+Alshammari, Zincir-Heywood \cite{alshammari2009machine}& 5 algorithms & ssh v.s skype features in Table~\ref{flfeatures} on old standard data &  $>90\%$ \\
+\hline
+Zhang {\em et al} \cite{zhang2013robust}& k-NN, Bayesian, random forest & number of packets, bytes transferred, packet size, inter-packet time & variable\\
+\hline
+Branch {\em et al}\cite{branch2009rapid}& C4.5 & Skype identification.  Packet lengths, inter arrival times, large v/s small packets& $>98\%$\\
+\hline
+\end{tabular}
+\end{small}
+\caption{\label{tab1} Related Machine Learning Approaches Compared}
+\end{table}
+
+
+
+
+\begin{table}[htbp]
+\begin{tabular}{|l|l|}
+\hline
+ Protocol &   Duration of the flow\\
+\hline
+\# Packets in forward direction & \# Bytes in forward direction\\
+\# Packets in backward direction & \# Bytes in backward direction\\
+Min forward inter-arrival time  & Min backward inter-arrival time\\
+Std deviation of forward interarrival
+times &
+Std deviation of backward interarrival
+times\\
+Mean forward inter-arrival time & Mean backward inter-arrival time\\
+Max forward inter-arrival time &  Max backward inter-arrival time\\
+Min forward packet length & Min backward packet length\\
+Max forward packet length & Max backward packet length\\
+Std deviation of forward packet
+length &
+Std deviation of backward packet
+length\\
+Mean backward packet length &Mean forward packet length\\
+\hline
+\end{tabular}
+\caption{\label{flfeatures}Typical feature set for a ML algorithm}
+\end{table}
+
+The results of Table~\ref{tab1} would perhaps suggest that it is easy
+to get accuracies of greater than $80\%$ while solving the identification
+problem using machine learning techniques.  While we have had similar
+successes in attempting to identify Skype against non-Skype, we have
+not had similar successes with other classification attempts over
+browser-based applications such as gmail.
+
+Absorbing the work that went behind all these papers gave us much better insight and intuition into the nature of the identification problem and the techniques to solve it than if we were to attempt solving it from scratch. 

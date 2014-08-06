@@ -1,0 +1,23 @@
+On the larger data set, we get
+\begin{table}[h]
+\begin{small}
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+\hline
+ & \multicolumn{3}{|c|} {J48} & \multicolumn{3}{|c|} {LADTree} &  \multicolumn{3}{|c|} {Bayesian Logistic Regression} \\ 
+\hline
+ & prec. & recall & f-meas. & prec. & recall & f-meas. & prec. & recall & f-meas. \\
+\hline
+chrome.facebook  & .97 & .95 & .96 & .96 & .96 & .96 & .96 & .97 & .97\\
+chrome.gmail     & .81 & .61 & .69 & .83 & .71 & .77 & .90 & .61 & .72 \\
+chrome.linkedin  & .89 & .82 & .85 & .89 & .89 & .89 & .94 & .90 & .92\\
+firefox.facebook & 1.0 & .75 & .86 & 0.50 & 0.50 &	0.50 & 0.88  &	0.667 &	0.759\\
+firefox.gmail    & 0.308 &	0.154 &	0.205 & 0.684 &	0.342 &	0.456 & 0.88  &	0.667 &	0.759\\
+firefox.linkedin & 0.308 &	0.154 &	0.205 & 0.667 &	0.308 &	0.421 & 0.818 &	0.346 &	0.486\\
+linkedin         & 0.719 &	0.451 &	0.642 & 0.667 &	0.471 &	0.552 & 0.69  &	0.569 &	0.624\\
+gmail            & 0.868 &	0.489 &	0.776 & 0.764 &	0.723 &	0.743 & 0.802 &	0.777 &	0.789\\
+skype            & 0.897 &	0.897 &	0.897 & 0.946 &	0.897 &	0.921 & 1     &	0.872 &	0.932\\
+\hline
+\end{tabular}
+\end{small}
+\caption{\label{tbl-std-large}Results of running some standard machine learning algorithms in Weka upon our data.}
+\end{table}

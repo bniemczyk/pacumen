@@ -1,0 +1,42 @@
+%\subsection{Use of Standard Machine Learning Algorithms}
+We ran our experiments on our machine learning algorithms and also on
+standard machine learning algorithms in Weka. Table \ref{tbl-std}
+shows the result.
+
+The results are comparitively worse for the classes {\tt firefox.gmail} and {\tt firefox.linkedin}.  The extra rows {\tt gmail}
+and {\tt linkedin} were created by combining the firefox and chrome versions of these classes.   It can be observed that
+this union yielded better results, leading to the conclusion that the firefox and the chrome versions of the classes were often mistaken for one another. 
+
+% The comparitively better results we see in the row for skype is either a reflection of
+% the fact that skype being a standalone entity rather than a web-page based one,
+% makes it easy to be distinguished, or we were just plain lucky -- by the time of
+% the black hat event we will resolve this question by subjecting pacumen to 
+% 10x the amount of data. We will wait till then to arrive at a detailed 
+% comparison of our machine learning technique with standards ones from Weka.
+
+
+
+\begin{table}[h]
+\begin{small}
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|}
+\hline
+& \multicolumn{3}{|c|} {J48} & \multicolumn{3}{|c|} {LADTree} &  \multicolumn{3}{|c|} {BLR} & \multicolumn{3}{|c|} {Our Tree} \\
+\hline
+& P & R & F & P & R & F & P & R & F & P & R & F \\
+\hline
+chrome.facebook  & .92 &	.79 &	.85 & .87 &	.82 & .84 & .85 & .70 &	.77 & .70 & .96 & .81\\
+chrome.gmail     & .64 &	.32 &	.43 & .60 &	.38 & .46 & .59 & .54 &	.56 & .38 & 1.0 & .55\\
+chrome.linkedin  & .51 &	.56  &	.54 & .63 &	.40 & .49 & .78 & .72 &	.75 & .95 & .43 & .59\\
+firefox.facebook & .84	& .64 &	.72 & .86 &	.73 & .79 & .88 & .67 &	.76 & .33 & 1.0 & .50\\
+firefox.gmail    & .30 &	.15 &	.21 & .68 &	.34 & .46 & .88 & .67 &	.76 & .18 & 1.0 & .31\\
+firefox.linkedin & .30 &	.15 &	.21 & .67 &	.31 & .42 & .82 & .35 &	.49 & .50 & 1.0 & .66\\
+linkedin         & .71 &	.45 &	.64 & .67 &	.47 & .55 & .69 & .57 &	.62 & --   & --   & --  \\
+gmail            & .86 &	.50 &	.78 & .76 &	.72 & .74 & .80 & .78 &	.79 & --   & --   & --  \\
+skype            & .89 &	.90 &	.90 & .95 &	.90 & .92 & 1.0 & .87 &	.93 & 1.0 & 1.0 & 1.0\\
+\hline
+\end{tabular}
+\end{small}
+\caption{\label{tbl-std}Results of running some standard machine learning algorithms in Weka upon our data. The columns P,R,F stand for precision, recall and f-measure respectively. BLR stands for Bayesian Logistic Regression. }
+\end{table}
+
+

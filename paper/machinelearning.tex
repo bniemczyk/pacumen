@@ -1,0 +1,64 @@
+\section{A quick introduction to Machine Learning}
+
+Given that this problem has been addressed using machine learning techniques,
+it is fruitful to introduce these properly (beyond presenting a laundry list
+of machine learning algorithms). In his book \cite{mitchell1997machine}, Tom Mitchell defines \emph{learning} as:
+A computer program is said to {\bf learn} from experience $E$ with
+respect to some tasks $T$ and some performance measure $P$ if its
+performance at tasks in $T$ improves with $E$.
+
+When using machine learning for the act of assigning entities to classes,
+the result of learning is a \emph{classifier} which can be 
+applied to instances not seen during training.
+
+Our main goal, while solving the identification problem is not to
+debate the meaning of the word \emph{learning} but to find algorithms
+and techniques that satisfy the above definition and to devise some
+ourselves.
+
+The act of designing a machine learning system incudes firstly the
+design or choice of the training experience. Secondly, we must choose
+or design a target function that helps us with the act of classification.
+Thirdly, we need to choose a representation of this target function. 
+We need to arrive at approximation schemes to evaluate this target function
+for values not in the training set. We will describe how we performed
+all of  these steps listed above in the next section.
+
+\subsection{Issues while designing machine learning systems}
+The list of Machine Learning algorithms continues to grow and some of
+them are being used heavily in the real world.  Understanding the
+appropriateness of these algorithms to the problem being solved, and
+following up this understanding with a decision of which algorithm to use
+is difficult.  Also, the decision of having to design a new algorithm is
+not an easy one, and needs justification -- often by appealing to 
+the special features of the problem at hand.
+
+It is often asserted in literature that a large amount of data with
+simple algorithms outperforms sophisticated algorithms with smaller
+amounts of data.  The central question here is: \emph{How much
+  training data is sufficient?} How can we quantify the confidence 
+in the learning done on the training data?
+
+How much can we use prior knowledge in these systems. For instance is it
+OK to pre-process data -- by ignoring some particular features, even if the 
+knowledge guiding this decision is approximate?
+
+When should re-training be done?  Should we do the same kind of training
+as we did before, or should we modify the training -- say, by adding/deleting
+features? 
+
+What form should the classifier take? Should we let the learning system decide this? 
+
+\subsection{Performance Issues}
+Sophisticated machine learning algorithms allow parameterization of
+the extent to which they will fit the model to the training data. It
+is easy to fall into the trap of overfitting the data -- in which case
+results in the laboratory look very good. These models do not often 
+perform as well on real world data.  
+
+In our case, the application of standard machine learning algorithm
+such as \emph{BayesianLogisticRegression} to the problem of distinguishing
+Skype from everything else had a \emph{precision} of $1$ which means that
+it had no false positives and a \emph{recall} of $0.872$.  We are in the
+process of determining the extent of overfitting in this and other good
+results by applying the same technique to 10x the amount of data.  

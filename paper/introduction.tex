@@ -1,0 +1,46 @@
+\section{Living Document}
+
+This paper is a living document, please grab the latest version from \\
+https://raw.githubusercontent.com/bniemczyk/pacumen/master/paper/pacumen.pdf
+
+\section{Introduction}
+
+The ability to dynamically classify and identify the entities behind
+network traffic could help us with various network activities.  These
+activities include IP network engineering with network provisioning
+and network management. This ability is especially important for
+surveillance for policy compliance and security.
+
+Today's techniques, when applied to traffic that is not hidden rely on
+the visibility of packet headers, port numbers and the protocol, and
+stateful reconstruction of sessions.  These cues disappear when ssh,
+SSL or other tunneling mechanisms are used to hide traffic. Whether
+the hiding is legitimate or not, it is advantageous to identify
+information about encrypted traffic. Enterprises might proscribe
+service providers that either allow policy violations or cause a
+competitive disadvantage.  Campus networks could desire to prevent
+games from clogging up the available bandwidth.  From the point of
+view of a network provider, better classification and understanding of
+traffic could allow better traffic shaping. Entities interested in
+policy enforcement could also derive more meta data by such analysis.
+
+We shall use the term \emph{identification problem} to mean the act of
+identifing traffic behind encrypted channels.  There are several
+published techniques resulting from many years of research in order to
+classify traffic -- most of them rely on machine learning.
+
+
+We are releasing a simple tool that we call {\tt pacumen}, that relies
+on simple, easily collectible features in order to solve the
+\emph{identification problem}. This tool is intended to be be easy to
+use, and when compared to the academic approaches, need smaller amount
+of data for training and lesser user intervention for it to
+function. Additionally, as this tool is released as an open source
+project on {\tt github}, we expect users to extend this tool and
+contribute to its growth.  Our main purpose in this exercise to gain
+insight and understanding to the phenomenon of hiding traffic behind
+encrypted tunnels and the process of applying machine learning
+techniques in an attempt to uncover them.  This work should both lead
+to better techniques on both sides of this hide-and-seek game. Lastly,
+we present some experiments and their results to validate {\tt
+  pacumen}.
